@@ -7,5 +7,7 @@ import 'package:io_2017_components_codelab/app_component.dart';
 import 'package:pwa/client.dart';
 
 void main() {
-  bootstrap(AppComponent, [new Provider(PwaClient, useValue: new PwaClient())]);
+  bootstrap(AppComponent, [
+    new Provider(PwaClient, useValue: new PwaClient(scriptUrl: 'pwa.g.dart.js'))
+  ]);
 }
