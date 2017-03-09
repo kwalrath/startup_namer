@@ -8,6 +8,6 @@ import 'package:pwa/client.dart';
 
 void main() {
   bootstrap(AppComponent, [
-    new Provider(PwaClient, useValue: new PwaClient(scriptUrl: 'pwa.g.dart.js'))
+    new Provider(PwaClient, useValue: new PwaClient())
   ]);
 }
